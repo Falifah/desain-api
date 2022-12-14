@@ -1,17 +1,100 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 1
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
+<ion-menu contentId="main-content">
+  <ion-header>
     <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
+      <ion-title>Elearning </ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content class="ion-padding">Sistem Informasi</ion-content>
+  <ion-label>FINKOM</ion-label>
+</ion-menu>
+
+<div class="ion-page" id="main-content">
+  <ion-header class="head">
+    <ion-toolbar color="danger">
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <ion-title>Menu</ion-title>
+      <ion-button slot="end" size="small" fill="clear">Logout</ion-button>
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+<ion-content [fullscreen]="true">
+     <!-- routerLink="/blank"> -->
+     <div class="main_content_div">
+      <div class="user_div">
+          <ion-avatar class="icon">
+            <img src="https://i.postimg.cc/mk0Ksx2V/Logo-Bulat-UNBIN.jpg" alt="">
+          </ion-avatar>
+        <div class="first_div">
+          <ion-label class="Welcome"><h1>Fatiya Alifah</h1></ion-label>
+          <ion-label class="no"><p>Sistem Informasi (S1)</p></ion-label>
+          <ion-label class="thanks"><p>Universitas Binaniaga</p></ion-label>
+       </div>
+        <ion-avatar class="icon">
+          <img src="https://i.postimg.cc/PrMjPcQX/32-FC926-F-3329-426-D-A694-7-C5-A8-F1-B97-BB.jpg" alt="">
+        </ion-avatar>
+      </div>
+    </div>
+  <ion-grid>
+    <ion-row>
+      <ion-col class="gd">
+        <h3><b><ion-text>3.4</ion-text></b></h3>
+        <ion-text>IP Kumulatif</ion-text>
+      </ion-col>
+      <ion-col class="gd">
+        <h3><b><ion-text>21</ion-text></b></h3>
+        <ion-text>SKS Tempuh</ion-text>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <button id="close-image" class="btn"><img src="https://cdn-icons-png.flaticon.com/512/1497/1497835.png"></button>
+        <p>Jadwal</p>
+      </ion-col>
+      <ion-col>
+        <button id="close-image" class="btn"><img src="https://cdn-icons-png.flaticon.com/512/6103/6103648.png"></button>
+        <p>Presensi</p>
+
+      </ion-col>
+      <ion-col>
+        <button id="close-image" class="btn"><img src="https://cdn-icons-png.flaticon.com/512/2387/2387676.png"></button>
+        <p>Nilai</p>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <button id="close-image" class="btn"><img src="https://cdn-icons-png.flaticon.com/512/2436/2436729.png"></button>
+        <p>Bahan & Tugas</p>
+      </ion-col>
+      <ion-col>
+        <button id="close-image" class="btn"><img src="https://cdn-icons-png.flaticon.com/512/1344/1344761.png"></button>
+        <p>TA/Wisuda</p>
+      </ion-col>
+      <ion-col>
+        <button id="close-image" class="btn"><img src="https://cdn-icons-png.flaticon.com/512/3038/3038168.png"></button>
+       <p>KRSS/KRS</p> 
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <button id="close-image" class="btn"><img src="https://cdn-icons-png.flaticon.com/512/3074/3074584.png"></button>
+        <p>Kuesioner</p>
+      </ion-col>
+      <ion-col>
+        <button id="close-image" class="btn"><img src="https://cdn-icons-png.flaticon.com/512/548/548251.png"></button>
+        <p>Biaya Kuliah</p>
+      </ion-col>
+      <ion-col>
+        <button id="close-image" class="btn"><img src="https://cdn-icons-png.flaticon.com/512/1063/1063141.png"></button>
+        <p>Kegiatan</p>
+      </ion-col>
+
+    </ion-row>
+
+  </ion-grid>
+
 </ion-content>
